@@ -1,0 +1,347 @@
+*{
+	box-sizing:border-box;
+	text-size-adjust:none;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Ebrima;
+}
+
+.contenedor {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.fdo {
+	background-image: url(../img/bkg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*
+	height:100%;
+	width:100%;	
+	position: absolute;
+	z-index: -2;
+	*/
+}
+
+.phoneFrame {
+	background-image: url(../img/phoneframe.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 720px;
+    width: 336px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+	z-index: 1;
+	padding-top: 105px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 103px;
+}	
+
+.dialogContainer {
+	background-image: url(../img/dialogtxt.png);
+	background-repeat: no-repeat;
+	float: right;
+	height: 409px;
+	width: 500px;
+	margin-top: 30px;
+	margin-right: 200px;
+	z-index: 1;
+}
+
+.icoTiendas {
+	z-index: 1;
+	height: 89px;
+	width: 285px;
+	float: right;
+	margin-right: 275px;
+	padding-top: 35px;
+}
+
+#btwIcos {
+	padding-bottom: 25px;
+}
+
+.txtDialog {
+	font-family: Ebrima;
+	color: #971228;
+	text-align: center;
+	padding: 33px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footer {
+	background-color: white;
+	opacity: 0.85;
+	width: 100%;
+	height: 70px;
+	margin: 0;
+	top: 880px;
+	position: absolute;
+	z-index: 1;
+}
+
+.esferaPublica {
+    vertical-align: middle;
+    position: absolute;
+    text-align: left;
+    font-size: 18px;
+    color: #971228;
+    padding-left: 20px;
+}
+
+.proweb {
+    vertical-align: middle;
+    text-align: right;
+    font-size: 18px;
+    color: #000;
+    padding-right: 20px;
+}
+
+.linkProweb {
+	color: #E83403;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.linksEsfera {
+	text-decoration: none;
+	font-weight: bold;
+	color: #971228;
+}
+
+.icoFooter {
+	position: absolute;
+	top: 890px;
+	height: 48px;
+	width: 180px;
+	left: 610px;
+	z-index: 1;
+	word-spacing: 13px;
+}
+
+.icoFooter a{
+	text-decoration: none;
+}
+
+/** SCROLL **/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #FFFFFF; 
+}
+::-webkit-scrollbar-thumb {
+    background: #9a081d; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9a081d; 
+}
+
+/** ESTILOS NOTICIAS **/
+.encTel{
+	width:100%;
+	margin:0;
+	padding:0;
+	height:48px;
+}
+.footTel{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.encTel img,
+.footTel img{
+	width:100%;
+}
+.contenedorNoticias{
+	position:relative;
+	width:100%;
+	height:436px;
+	background:#FFF;
+	overflow:auto;
+}
+.contenedorNoticias table{
+	width:100%;
+	padding:0;
+	border-spacing:0;
+}
+.contenedorNoticias table tr{
+	box-shadow: 0 3px 6px 0 #CCC;
+}
+.contenedorNoticias table td{
+	padding:3px;
+}
+.contenedorNoticias table td img{
+	max-width:100%;
+	max-height:100%;
+}
+
+.contenedorNoticias table td .tema{
+	font-size:11px;
+	color:#9a081d;
+}
+.contenedorNoticias table td .tema span{
+	color:#0b62b4;
+}
+.contenedorNoticias table td .titulo{
+	font-size:11px;
+	font-weight:bold;
+}
+.contenedorNoticias table td .texto{
+	font-size:11px;
+	color:#2c2c2c;
+}
+.contenedorNoticias table td .fecha{
+	font-size:10px;
+	color:#0b62b4;
+}
+.contenedorNoticias table .separador{
+	box-shadow:none;
+}
+.contenedorNoticias table .separador td{
+	padding:3px;
+}
+
+.footerResp{
+	display:none;
+}
+.dialogResp {
+	display:none;
+}
+
+/** RESPONSIVE **/
+@media only screen and (max-device-width:1042px){
+	.fdo{
+		background-position: center center;
+	}
+	.contenedor{
+		display:block;
+		width:100%;
+		height:100vh;
+		padding:0;
+		margin:0;
+	}
+	.icoTiendas,
+	.footer,
+	.icoFooter{
+		display:none;
+	}
+	.dialogContainer{
+		display:block;
+		float:none;
+		background-image: url(../img/dialog.png);
+		background-repeat: no-repeat;
+		height: 74vw;
+		width: 90vw;
+		margin:0 auto;
+		margin-top: 95px;
+		z-index: 1;
+		background-size: cover;
+		padding-top: 50px;
+		padding-left: 105px;
+		padding-right: 60px;
+		padding-bottom: 60px;
+	}
+	.encTel{
+		height:auto;
+		text-align:center;
+		background:#ede1e1;
+	}
+	.encTel img{
+		width:80%;
+	}
+	.footTel{
+		display:none;
+	}
+	.phoneFrame{
+		display:none;
+		background: none;
+		width: 100%;
+		height:100vh;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	.contenedorNoticias{
+		height: 100vh;
+		padding-bottom:40vh;
+	}
+	.contenedorNoticias table td .tema,
+	.contenedorNoticias table td .titulo,
+	.contenedorNoticias table td .texto{
+		font-size:30px;
+		padding-left:25px;
+	}
+	.contenedorNoticias table td .fecha{
+		font-size:30px;
+		padding-left:25px;
+	}
+	.contenedorNoticias table td img{
+		max-width:calc(100% - 25px);
+	}
+	
+	.footerResp{
+		display:block;
+		position:fixed;
+		width: 100%;
+		bottom:0;
+		text-align:center;
+		color:#FFF;
+		font-size:30px;
+		background:rgba(55, 55, 55, 0.95);
+		padding:25px 40px;
+	}
+	.footerResp .iconoTiendas{
+		width:45%;
+		margin:0;
+		margin-top: 25px;
+	}
+	.footerResp .redes{
+		padding:20px 0;
+		text-align:center;
+	}
+	.footerResp .redes a{
+		text-decoration:none;
+	}
+	.footerResp .redes a img{
+		width:90px;
+		margin-top: 20px;
+	}
+
+/* ----- PLUS ----- */
+	.linkResp {
+		color: #FFF;
+	}
+
+	.noDec {
+		text-decoration: none;
+	}
+/*--------TXT RESPONSIVE----------*/
+	.dialogResp {
+		position: absolute;
+		display: block;
+		width: 100%;
+		text-align: center; 
+		font-size:40px;
+		top: 70px;
+		padding-top: 50px;
+	    padding-right: 90px;
+	    padding-left: 80px;
+		margin-right: 20px; 
+		font-family: Ebrima;
+		color: #971228;
+	    line-height: 2;
+	    z-index: 1;
+	}
+	.txtDialog {
+		display:none;
+	}

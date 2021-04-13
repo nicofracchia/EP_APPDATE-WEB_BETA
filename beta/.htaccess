@@ -1,0 +1,24 @@
+
+RewriteOptions inherit
+# SI ENTRAN CON HTTP REDIRECCIONA CON HTTPS
+# <IfModule mod_rewrite.c>
+ # RewriteEngine On
+ # RewriteCond %{HTTPS} !on [NC]
+ # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# </IfModule>
+
+## URL FRIENDLY
+RewriteRule ^home?$ index.php
+RewriteRule ^politica_y_sociedad?$ listados.php?seccion=1
+RewriteRule ^economia_y_finanzas?$ listados.php?seccion=2
+RewriteRule ^laboral?$ listados.php?seccion=3
+RewriteRule ^industria_y_pymes?$ listados.php?seccion=4
+RewriteRule ^agro?$ listados.php?seccion=5
+RewriteRule ^energia_y_mineria?$ listados.php?seccion=6
+RewriteRule ^telecomunicaciones?$ listados.php?seccion=7
+RewriteRule ^usuarios_y_consumidores?$ listados.php?seccion=8
+RewriteRule ^salud_y_alimentacion?$ listados.php?seccion=9
+RewriteRule ^medioambiente?$ listados.php?seccion=10
+RewriteRule ^judiciales?$ listados.php?seccion=11
+RewriteRule ^busqueda?$ listados.php?seccion=12
+RewriteRule ^noticia/([0-9]+)/(.+)?$ noticia.php?noticia=$1&titulo=$2
